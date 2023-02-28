@@ -1,0 +1,176 @@
+/* font-family: 'Lato', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.logo {
+  width: 89px;
+}
+
+.menu {
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-ul {
+  display: flex;
+}
+
+.menu-ul li {
+  margin-right: 40px;
+}
+
+.menu-ul li:last-child {
+  margin-right: 0px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  line-height: 53px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 465px;
+  margin-bottom: 29px;
+}
+
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 540px;
+}
+
+.banner {
+  background-image: url(images/font.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner a {
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00d6b4;
+}
+
+
+.work-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.works {
+  background: #222222;
+  padding-top: 49px;
+  padding-bottom: 101px;
+}
+
+
+.card {
+  width: calc(100% / 3 - 40px / 3);
+}
+
+.works h2 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 33px;
+}
+
+
+.footer {
+  background: #222222;
+  padding-top: 35px;
+  padding-bottom: 65px;
+}
+
+
+.footer p {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #C2C2C2;
+}
+
+
+.footer p {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #999999;
+  padding-top: 10px;
+}
+
+
+
+
+@media(max-width: 768px) {
+  .card {
+    width: calc(100% / 2 - 10px);
+  }
+
+  .card img {
+    width: 100%;
+  }
+}
+
+@media(max-width: 476px) {
+  .card {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+
+  .menu-ul li {
+    margin-right: 10px;
+  }
+
+}
